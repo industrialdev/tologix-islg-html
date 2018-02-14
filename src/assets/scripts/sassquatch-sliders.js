@@ -77,4 +77,10 @@
     }
   }
 
+  $('.slick-prev, .slick-next').click(function(){
+   var slideIndex =  parseInt($('.slick-active').attr('data-slick-index')) + 1;
+   $('.product-features__tab').removeClass('active');
+   $('.product-features__tab:nth-of-type(' + slideIndex + ')').addClass('active');
+  });
+
 })(jQuery);

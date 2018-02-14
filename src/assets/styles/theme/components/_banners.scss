@@ -30,18 +30,74 @@
     background-position:right;
     background-size:cover;
     background-repeat:no-repeat;
+    position:relative;
     *[class^="grid__col"]{
-      padding-top:60px;
+      padding-top:90px;
       padding-bottom:60px;
       padding-right:120px;
       background:$color-bg;
+      position:relative;
     }
     h1{
       @include set-type(18, 600, 22);
+      color:$color-brand-1;
+      margin:0;
+      margin-bottom:8px;
+    }
+    h2{
+      @include set-type(38, 500, 44);
+      margin-top:15px;
+      margin-bottom:30px;
+    }
+    hr{
+      width:30px;
+      height:3px;
+      background:$color-brand-1;
+    }
+    p{
+      @include set-type(18, 400, 24);
+      margin-bottom:30px;
+      &.small{
+        @include set-type(14, 400, 18);
+      }
+    }
+    .btn--play__wrapper{
+      position:absolute;
+      right:-150px;
+      top:50%;
+      transform:translateY(-50%);
+    }
+    .btn--play-dk{
+      height:80px;
+      width:80px;
+      border-radius:80px;
+      &:before{
+        height:80px;
+        width:80px;
+        margin-top:-5px;
+        margin-left:0px;
+      }
+      &:after{
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-left: 35px solid $color-lt;
+      }
+    }
+    &__hexagons{
+      position:absolute;
+      bottom:30px;
+      opacity:0.5;
+      left:-200px;
+      width:400px;
+      height:auto;
     }
   }
-  &--product{
-    background-image:url('../images/Banners/Product.png');
+  &__poly{
+    position:absolute;
+    top:0;
+    right:-140px;
+    height:100%;
+    width:151px;
   }
   + section{
     .videobox{

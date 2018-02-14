@@ -86,7 +86,7 @@ body{
 	}
 }
 
-.clients{
+.slick{
 	padding:0 45px;
 	position:relative;
 	.slick-prev,
@@ -103,5 +103,147 @@ body{
 	.slick-next{
 		right:0;
 	}
+}
+
+.product-features{
+	.btn--play__wrapper{
+    position:absolute;
+    top:50%;
+    left:18%;
+    transform:translateY(-50%);
+  }
+  .btn--play-dk{
+    height:70px;
+    width:70px;
+    border-radius:80px;
+    padding:0;
+    &:before{
+      height:70px;
+      width:70px;
+      margin-top:-5px;
+      margin-left:0px;
+    }
+    &:after{
+      border-top: 15px solid transparent;
+      border-bottom: 15px solid transparent;
+      border-left: 25px solid $color-lt;
+      margin-left:4px;
+    }
+  }
+	.slick-slide{
+		height:auto;
+		text-align:center;
+		img{
+			display:inline-block;
+			max-width:100%;
+			position:static;
+			top:auto;
+			left:auto;
+			transform:none;
+		}
+	}
+	&__tabs{
+		list-style:none;
+		padding:0;
+		margin:0;
+		display:flex;
+		border-bottom:1px solid $color-neutral-lt;
+		margin-bottom:45px;
+	}
+	&__tab{
+		width:33.33333%;
+		float:left;
+		padding:45px;
+		border-bottom:5px solid transparent;
+		transition:all 0.2s ease-in-out;
+		&.active{
+			border-bottom:5px solid $color-brand-1;
+		}
+		h3{
+			@include set-type(24, 400, 28);
+		}
+		p{
+			@include set-type(14, 400, 20);
+		}
+		img{
+			display:inline-block;
+			width:auto;
+			height:60px;
+		}
+	}
+}
+
+.bucket{
+	padding:90px 0;
+	h3{
+		margin-bottom:10px;
+		@include set-type(26, 400, 32);
+	}
+	img{
+		max-width:100%;
+	}
+	p{
+		margin-bottom:30px;
+	}
+	p, button{
+		@include set-type(14, 400, 20);
+	}
+	button{
+		font-weight:700;
+	}
+	hr{
+		width:30px;
+		height:3px;
+		margin-top:0;
+		margin-bottom:15px;
+		background:$color-brand-1-lt;
+	}
+	*[class^="grid__col"]{
+		position:relative;
+		img{
+			position:absolute;
+			top:50%;
+			transform:translateY(-50%);
+		}
+	}
+	&__img{
+		&--offset-left{
+			margin-left:-75px;
+		}
+	}
+}
+
+.team{
+	text-align:center;
+	vertical-align:top;
+	&--no-image{
+		.team__member{
+			width:200px;
+		}
+	}
+	&__member{
+		text-decoration:none;
+		display:inline-block;
+		width:250px;
+		vertical-align:top;
+		margin:30px 15px;
+		@include set-type(14, 400, 18);
+		img{
+			width:175px;
+			max-width:100%;
+			margin-bottom:15px;
+		}
+		.link{
+			color:$color-brand-1;
+		}
+		p{
+			margin-bottom:5px;
+		}
+	}	
+}
+
+.pager{
+	padding-top:30px;
+	padding-bottom:30px;
 }
 

@@ -135,6 +135,9 @@
   &__meta{
     p{
       @include set-type(14, 400, 18);
+      strong{
+        color:$color-neutral-dk;
+      }
       em{
         font-weight:300;
       }

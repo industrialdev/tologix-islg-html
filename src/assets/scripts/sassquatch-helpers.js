@@ -72,7 +72,7 @@ window.addEventListener('hashchange', function(event) {
   // Hides horizontal rules from screen readers
   $('hr').attr('aria-hidden', 'true');
 
-  $('.clients').slick();
+  $('.slick').slick();
 
   $('.slick-arrow').wrapInner('<span class="webaim-hidden"></span>');
   $('.slick-prev').prepend('<i class="zmdi zmdi-arrow-left" aria-hidden="true"></i>');

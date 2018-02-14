@@ -33,6 +33,7 @@
   position:relative;
   margin:40px 0;
   margin-top:100px;
+  min-height:50px;
   &__text{
     display:inline-block;
     background:$color-lt;
@@ -41,6 +42,13 @@
     padding:0 60px;
     text-transform:uppercase;
     color:$color-neutral;
+    max-width:100%;
+    position:absolute;
+    z-index:2;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+
   }
   hr{
     position:absolute;
@@ -48,6 +56,6 @@
     top:50%;
     transform:translateY(-50%);
     margin:0;
-    z-index:-1;
+    z-index:1;
   }
 }

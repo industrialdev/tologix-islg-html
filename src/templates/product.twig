@@ -3,21 +3,217 @@
 
 {% block content %}
 
-	<div class="banner banner--sub banner--product">
+	<div class="banner banner--sub" style="background-image:url('assets/images/Banners/Product.png');">
 		<div class="container">
 			<div class="grid">
 				<div class="grid__col--md-6 grid__col--offset-right-md-1">
-					<h1 class="silhouette__wrapper"><span class="silhouette"></span>Product</h1>
+					<h1 class="silhouette__wrapper"><span class="silhouette">Product</span>Product</h1>
+					<div class="silhouette__wrapper">
+						<hr class="silhouette">
+						<hr>
+					</div>
 					<h2>Research reinvented</h2>
 					<p><em>The world of investment treaty law at your fingertips. Survey our vast collection of investment treaty law material with ease.</em></p>
-					<p>Learn more about our legal research guide. <a href="#">Watch the demo</a></p>
+					<p class="small">Learn more about our legal research guide. <a href="#" class="link">Watch the demo</a></p>
 					<p><a href="#" class="btn btn--primary">Start Your Trial</a></p>
+					<img src="assets/images/Banners/banner-poly.svg" alt="" class="banner__poly">
 					<div class="btn--play__wrapper">
-						<button class="btn btn--play-dk"><span class="webaim-hidden">Play Video</span></button>
+						<button class="btn btn--play-dk" data-popup="video-popup-1"><span class="webaim-hidden">Play Video</span></button>
+					</div>
+					<div class="popup" id="video-popup-1">
+					  <div class="popup__content">
+					    <button class="popup__close"><i class="fa fa-times" aria-hidden="true"></i><span class="webaim-hidden">Close popup</span></button>
+							<div class="video__wrapper">
+    						<iframe class="video" width="560" height="315" src="//www.youtube.com/embed/NKZOxm4xAsg?rel=0" frameborder="0" allowfullscreen></iframe>
+							</div>
+					  </div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<img class="banner--sub__hexagons" src="assets/images/Banners/home-banner-hexagons.png" alt="">
 	</div>
+
+	<section id="page-content">
+		<div class="container">
+			<div class="grid">
+				<div class="grid__col--md-6 grid__col--offset-right-md-3 text-centered">
+					<h2 class="section__heading section__heading--blue section__heading--spaced">Conduct research with pinpoint accuracy</h2>
+					<p>Our robust online collection gets you the international investment<br> treaty law materials you need, fast.</p>
+				</div>
+			</div>
+			<div class="grid buckets">
+				<div class="grid__col--md-10 grid__col--offset-right-md-1">
+					<div class="grid grid--flex-md bucket">
+						<div class="grid__col--md-6">
+							<h3>Identify relevant passages quickly</h3>
+							<hr>
+							<p>Research complex subjects by isolating relevant issues and digging deeper in the <strong>Subject Navigator</strong>. With an intuitive interface and supplementary research tools, you'll quick;y drill down to the issues you're looking for.</p>
+							<div class="link--play__wrapper">
+								<button class="link link--play" data-popup="video-popup-2">Watch the subject navigator demo</button>
+							</div>
+							<div class="popup" id="video-popup-2">
+							  <div class="popup__content">
+							    <button class="popup__close"><i class="fa fa-times" aria-hidden="true"></i><span class="webaim-hidden">Close popup</span></button>
+									<div class="video__wrapper">
+		    						<iframe class="video" width="560" height="315" src="//www.youtube.com/embed/NKZOxm4xAsg?rel=0" frameborder="0" allowfullscreen></iframe>
+									</div>
+							  </div>
+							</div>
+						</div>
+						<div class="grid__col--md-6">
+							<img src="assets/images/product/subjectnavgraphic.png" alt="">
+						</div>
+					</div>
+					<div class="grid grid--flex-md bucket">
+						<div class="grid__col--md-6">
+							<img src="assets/images/product/Article-citator.png" class="bucket__img--offset-left" alt="">
+						</div>
+						<div class="grid__col--md-6">
+							<h3>See how legal materials have been interpreted</h3>
+							<hr>
+							<p>Learn how specific legal instruments have been interpreted or applied by tribunals in just a few clicks with <strong>Article Citator</strong>. Sort results according to your needs, such as most recently or most commonly cited provisions, and jump directly to relevant paragraphs and footnotes.</p>
+							<div class="link--play__wrapper">
+								<button class="link link--play" data-popup="video-popup-3">Watch the article citator demo</button>
+							</div>
+							<div class="popup" id="video-popup-3">
+							  <div class="popup__content">
+							    <button class="popup__close"><i class="fa fa-times" aria-hidden="true"></i><span class="webaim-hidden">Close popup</span></button>
+									<div class="video__wrapper">
+		    						<iframe class="video" width="560" height="315" src="//www.youtube.com/embed/NKZOxm4xAsg?rel=0" frameborder="0" allowfullscreen></iframe>
+									</div>
+							  </div>
+							</div>
+						</div>
+					</div>
+					<div class="grid grid--flex-md bucket">
+						<div class="grid__col--md-6">
+							<h3>Compare results of similar past cases</h3>
+							<hr>
+							<p>Use the <strong>Jurisprudence Citator</strong> to quickly see how a particular decision has been considered by subsequent tribunals. Isolate relevant passages and toggle between related decisions and awards to cross-reference your findings.</p>
+							<div class="link--play__wrapper">
+								<button class="link link--play" data-popup="video-popup-4">Watch the jurisprudence citator demo</button>
+							</div>
+							<div class="popup" id="video-popup-4">
+							  <div class="popup__content">
+							    <button class="popup__close"><i class="fa fa-times" aria-hidden="true"></i><span class="webaim-hidden">Close popup</span></button>
+									<div class="video__wrapper">
+		    						<iframe class="video" width="560" height="315" src="//www.youtube.com/embed/NKZOxm4xAsg?rel=0" frameborder="0" allowfullscreen></iframe>
+									</div>
+							  </div>
+							</div>
+						</div>
+						<div class="grid__col--md-6">
+							<img src="assets/images/product/jurispridence.png" alt="">
+						</div>
+					</div>
+					<div class="grid grid--flex-md bucket">
+						<div class="grid__col--md-6">
+							<img src="assets/images/product/Article-citator.png" class="bucket__img--offset-left" alt="">
+						</div>
+						<div class="grid__col--md-6">
+							<h3>Locate trusted secondary sources with ease</h3>
+							<hr>
+							<p>Track the history of use of trusted secondary resources with our unique <strong>Publication Citator</strong> tool. Gain insight into how authoritative materials have been utilized and considered by tribunals.</p>
+							<div class="link--play__wrapper">
+								<button class="link link--play" data-popup="video-popup-5">Watch the publication citator demo</button>
+							</div>
+							<div class="popup" id="video-popup-5">
+							  <div class="popup__content">
+							    <button class="popup__close"><i class="fa fa-times" aria-hidden="true"></i><span class="webaim-hidden">Close popup</span></button>
+									<div class="video__wrapper">
+		    						<iframe class="video" width="560" height="315" src="//www.youtube.com/embed/NKZOxm4xAsg?rel=0" frameborder="0" allowfullscreen></iframe>
+									</div>
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="product-features" class="section--grey section--hex-center">
+		<div class="container">
+			<h2 class="section__heading section__heading--blue section__heading--spaced">Powerful tools to support your research</h2>
+			<div class="product-features__tabs">
+				<li class="product-features__tab active">
+					<div class="text-centered">
+						<img src="assets/images/product/terms-phrases.png" alt="">
+					</div>
+					<h3>Clarify definitions as you go</h3>
+					<p>Use our <strong>Terms &amp; Phrases</strong> tool to see exactly how language has been defined in the context of previous investment arbitration tribunals.</p>
+				</li>
+				<li class="product-features__tab">
+					<div class="text-centered">
+						<img src="assets/images/product/fts.png" alt="">
+					</div>
+					<h3>Filter search parameters for optimal results</h3>
+					<p>Tailor your search across our document collection with the robust filters available in the <strong>Full Text Search</strong>.</p>
+				</li>
+				<li class="product-features__tab">
+					<div class="text-centered">
+						<img src="assets/images/product/notepad.png" alt="">
+					</div>
+					<h3>Save and share your findings</h3>
+					<p>Track your research, monitor and report your usage and collaborate with colleagues using our <strong>Notepad Feature</strong></p>
+				</li>
+			</div>
+			<div class="grid">
+				<div class="grid__col--md-6 grid__col--offset-right-md-3">
+					<div class="product-features slick" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+						<div>
+							<div class="btn--play__wrapper">
+								<button class="btn btn--play-dk" data-popup="video-popup-6"><span class="webaim-hidden">Play Video</span></button>
+							</div>
+							<img src="assets/images/product/searchgraphic.png" alt="">
+						</div>
+						<div>
+							<div class="btn--play__wrapper">
+								<button class="btn btn--play-dk" data-popup="video-popup-7"><span class="webaim-hidden">Play Video</span></button>
+							</div>
+							<img src="assets/images/product/searchgraphic.png" alt="">
+						</div>
+						<div>
+							<div class="btn--play__wrapper">
+								<button class="btn btn--play-dk" data-popup="video-popup-8"><span class="webaim-hidden">Play Video</span></button>
+							</div>
+							<img src="assets/images/product/searchgraphic.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="video-popup-6">
+		  <div class="popup__content">
+		    <button class="popup__close"><i class="fa fa-times" aria-hidden="true"></i><span class="webaim-hidden">Close popup</span></button>
+				<div class="video__wrapper">
+					<iframe class="video" width="560" height="315" src="//www.youtube.com/embed/NKZOxm4xAsg?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+		  </div>
+		</div>
+		<div class="popup" id="video-popup-7">
+		  <div class="popup__content">
+		    <button class="popup__close"><i class="fa fa-times" aria-hidden="true"></i><span class="webaim-hidden">Close popup</span></button>
+				<div class="video__wrapper">
+					<iframe class="video" width="560" height="315" src="//www.youtube.com/embed/NKZOxm4xAsg?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+		  </div>
+		</div>
+		<div class="popup" id="video-popup-8">
+		  <div class="popup__content">
+		    <button class="popup__close"><i class="fa fa-times" aria-hidden="true"></i><span class="webaim-hidden">Close popup</span></button>
+				<div class="video__wrapper">
+					<iframe class="video" width="560" height="315" src="//www.youtube.com/embed/NKZOxm4xAsg?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+		  </div>
+		</div>
+	</section>
+
+	<section id="prefooter" class="section--blue">
+		<div class="container">
+			<p class="text-centered"><a href="#" class="btn btn--tertiary-reversed">Start Your Trial</a></p>
+		</div>
+	</section>
 
 {% endblock %}

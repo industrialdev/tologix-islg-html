@@ -145,8 +145,6 @@ button{
   &--play,
   &--play-dk,
   &--play-lt{
-    height:100%;
-    width:100%;
     appearance:none;
     border:none;
     position:relative;
@@ -190,10 +188,10 @@ button{
     }
   }
   &--play-dk{
-    background:$color-brand-1-dk;
+    background:$color-brand-1;
     &:hover,
     &:focus{
-      background:$color-brand-1-lt;
+      background:$color-brand-1-dk;
     }
   }
   &--sm{

@@ -1,0 +1,55 @@
+{% extends "layouts/subpage.twig" %}
+{% set pageTitle = "About ISLG" %}
+
+{% block content %}
+
+	<div class="banner banner--sub" style="background-image:url('assets/images/Banners/About.png');">
+		<div class="container">
+			<div class="grid">
+				<div class="grid__col--md-6 grid__col--offset-right-md-1">
+					<h1 class="silhouette__wrapper"><span class="silhouette">About ISLG</span>About ISLG</h1>
+					<div class="silhouette__wrapper">
+						<hr class="silhouette">
+						<hr>
+					</div>
+					<h2>Meet the Team</h2>
+					<img src="assets/images/Banners/banner-poly.svg" alt="" class="banner__poly">
+				</div>
+			</div>
+		</div>
+		<img class="banner--sub__hexagons" src="assets/images/Banners/home-banner-hexagons.png" alt="">
+	</div>
+
+	<section id="page-content" class="section--hex">
+		<div class="container">
+			<a href="/about.html" class="btn btn--directional btn--directional-back"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> <span class="link">Back to About ISLG</span></a>
+			<div class="grid">
+				<div class="grid__col--md-4">
+					<img src="assets/images/Team/chris-thomas.png" alt="">
+				</div>
+				<div class="grid__col--md-8">
+					<h2>J. Christopher Thomas, QC</h2>
+					<em>Founder</em>
+					<p>Chris is the visionary who identified the need for ISLG, which would knit together all the disparate materials that form investment treaty law. Chris is the architect behind the taxonomy of ISLG's Subject Navigator, and is an editor for ISLG. Chris has practiced international trade and investment law for many years. He acted as a legal advisor in respect of the negotiation of various international trade agreements, argued cases before many international panels and tribunals and more recently acted as an international arbitrator.</p>
+				</div>
+			</div>
+			<hr>
+			<div class="grid pager">
+				<div class="grid__col--md-6">
+					<a href="#" class="btn btn--directional btn--directional-back"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> <span class="link">Previous</span></a> Greg Tereposky, Founder
+				</div>
+				<div class="grid__col--md-6 text-right">
+					Morgan Maguire, Chief Executive officer <a href="#" class="btn btn--directional btn--directional-forward"><span class="link">Next</span> <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="prefooter" class="section--blue">
+		<div class="container">
+			<h2 class="section__heading section__heading--white">Learn about how ISLG can make your research<br> more accuract, comprehensive and efficient.</h2>
+			<p class="text-centered"><a href="#" class="btn btn--tertiary-reversed">Contact ISLG</a></p>
+		</div>
+	</section>
+
+{% endblock %}
