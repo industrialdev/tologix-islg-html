@@ -1,0 +1,77 @@
+/* TYPOGRAPHY HELPERS
+---------------------------------------------------------------------------*/
+.text-centered{
+  text-align:center;
+}
+
+.text-right{
+  text-align:right;
+}
+
+.italic{
+  font-style:italic;
+}
+
+.caps{
+  text-transform:uppercase;
+}
+
+.no-break{
+  white-space:nowrap;
+}
+
+.ellipsis{
+  display:block;
+  white-space:nowrap;
+  max-width:100%;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+.link{
+  display:inline-block;
+  text-decoration:none;
+  padding-top:1px;
+  padding-bottom:1px;
+  border-bottom:1px solid;
+  transition:all 0.2s ease-in-out;
+  font-weight:700;
+  &:hover,
+  &:focus{
+    border-bottom:1px solid transparent;
+  }
+  &--reversed{
+    border-bottom:1px solid transparent;
+    &:hover,
+    &:focus{
+      border-bottom:1px solid $color-lt;
+    }
+  }
+}
+
+.label{
+  margin-bottom:0;
+  font-weight:600;
+}
+
+.copyright{
+  font-weight:600;
+}
+
+.silhouette{
+  &__wrapper{
+    position:relative;
+  }
+}
+
+*[data-attach-icon-after]{
+  i{
+    margin-left:5px;
+  }
+}
+
+*[data-attach-icon-before]{
+  i{
+    margin-right:5px;
+  }
+}

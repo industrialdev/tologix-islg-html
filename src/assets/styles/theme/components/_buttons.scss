@@ -1,0 +1,212 @@
+/* BUTTON COMPONENTS
+---------------------------------------------------------------------------*/
+button{
+  font-size:$font-base-size + px;
+  appearance:none;
+  border:none;
+  padding:0;
+  background:transparent;
+  text-align:left;
+  cursor:pointer;
+}
+
+.btn{
+  padding:12px 40px;
+  cursor:pointer;
+  transition:all 0.2s;
+  display:inline-block;
+  appearance:none;
+  text-decoration:none;
+  border-radius:50px;
+  margin-bottom:5px;
+  @include set-type(14, 700, 20);
+  &--primary{
+    background:$color-brand-1;
+    color:$color-lt;
+    &:hover,
+    &:focus{
+      background:$color-brand-1-lt;
+      color:$color-lt;
+    }
+  }
+  &--secondary{
+    background:$color-brand-1-dk;
+    border:1px solid $color-brand-1-dk;
+    color:$color-lt;
+    &:hover,
+    &:focus{
+      background:$color-brand-1-lt;
+      border:1px solid $color-brand-1-lt;
+    }
+  }
+  &--tertiary{
+    background:transparent;
+    border:1px solid $color-lt;
+    color:$color-lt;
+    &:hover,
+    &:focus{
+      background:$color-brand-1;
+    }
+  }
+  &--quaternary{
+    background:$color-brand-1-lt;
+    color:$color-lt;
+    border:1px solid $color-brand-1-lt;
+    &:hover,
+    &:focus{
+      background:$color-brand-1-dk;
+      border:1px solid $color-brand-1-dk;
+    }
+  }
+  &--tertiary-reversed{
+    background:$color-lt;
+    color:$color-brand-1;
+    border:1px solid $color-lt;
+    &:hover,
+    &:focus{
+      border:1px solid rgba($color-lt, 0.6);
+      background:rgba($color-lt, 0.6);
+    }
+  }
+  &--link{
+    background:transparent;
+    text-decoration:none;
+    border:0;
+    padding:0;
+    box-shadow:none;
+    &:hover,
+    &:focus{
+      background:transparent;
+      text-decoration:underline;
+    }
+  }
+  &--directional{
+    display: inline-block;
+    position: relative;
+    text-decoration:none;
+    padding:0 5px;
+    font-weight:700;
+    &__text{
+      display:block;
+      padding:1px 0;
+      border-bottom:1px solid $color-brand-1;
+      border-top:1px solid transparent;
+      transition:all 0.2s ease-in-out;
+    }
+    i{
+      position:absolute;
+      top:50%;
+      transform:translate(0, -50%);
+      transition:transform 0.1s ease-in-out; 
+    }
+    &:hover,
+    &:focus{
+      i{
+        animation-name: hover-button;
+        animation-duration: 1s;
+        transform:translate(0, -50%);
+      }
+      .btn--directional__text{
+        border-bottom:1px solid transparent;
+      }
+    }
+    &-forward{
+      padding-right: 30px;
+      i{
+        right:5px;
+      }
+    }
+    &-back{
+      padding-left: 30px;
+      i{
+        left:5px;
+      }
+    }
+  }
+  &--close{
+    padding:0;
+    background:transparent;
+    box-shadow:none;
+    border:none;
+    &:hover,
+    &:focus{
+      background:transparent;
+    }
+  }
+  &--dropdown{
+    @include set-type(18, 600, 22);
+    width:100%;
+    text-align:left;
+    padding:10px 15px;
+    background:$color-lt;
+    position:relative;
+    margin-bottom:0;
+  }
+  &--play,
+  &--play-dk,
+  &--play-lt{
+    height:100%;
+    width:100%;
+    appearance:none;
+    border:none;
+    position:relative;
+    height:110px;
+    width:110px;
+    border-radius:110px;
+    transition:background 0.2s ease-in-out;
+    background:$color-brand-1-lt;
+    &:hover,
+    &:focus{
+      background:$color-brand-1-dk;
+    }
+    &:before{
+      content:'';
+      display:block;
+      height:110px;
+      width:110px;
+      border-radius:110px;
+      background:rgba($color-brand-1-lt, 0.3);
+      position:absolute;
+      z-index:-1;
+      left:-10px;
+      top:50%;
+      transform:translateY(-50%);
+      margin-top:-5px;
+      margin-left:-2.5px;
+    }
+    &:after{
+      content:'';
+      display:block;
+      width: 0; 
+      height: 0;
+      border-top: 30px solid transparent;
+      border-bottom: 30px solid transparent;
+      border-left: 50px solid $color-lt;
+      position:absolute;
+      left:50%;
+      margin-left:8px;
+      top:50%;
+      transform:translate(-50%, -50%);
+    }
+  }
+  &--play-dk{
+    background:$color-brand-1-dk;
+    &:hover,
+    &:focus{
+      background:$color-brand-1-lt;
+    }
+  }
+  &--sm{
+    padding:5px 20px;
+    font-weight:500;
+    text-transform:uppercase;
+  }
+  &--slider-tab{
+    padding:5px;
+    border:1px solid $color-brand-1;
+    transition:background 0.2s ease-in-out;
+    &.active{
+      background:$color-brand-1;
+    }
+  }
+}

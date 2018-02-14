@@ -1,0 +1,41 @@
+/* Brand Colours
+------------------------------------------------------------------------------*/
+$color-threshold: 20%;
+
+$color-brand-1:       #1c449c;
+$color-brand-1-lt:    #3a8dde;
+$color-brand-1-dk:    #00205c;
+
+$color-brand-3:       #000;
+$color-brand-3-lt:    lighten($color-brand-3, $color-threshold);
+$color-brand-3-dk:    darken($color-brand-3, $color-threshold);
+
+$color-neutral:       #636569; // Grey
+$color-neutral-lt:    #d9d8d6;
+$color-neutral-dk:    #373A36;
+
+/* General Colours
+------------------------------------------------------------------------------*/
+$color-bg:						#fafafa; // grey
+$color-banner-bg:			#001643; // blue
+
+$color-lt:            #ffffff; // white
+$color-med:           #CCCCCC; // grey
+$color-dk:            #000000; // black
+
+/* Contextual Colours
+------------------------------------------------------------------------------*/
+$color-link: $color-brand-1-dk;
+$color-link-hover: $color-brand-1;
+
+$color-danger:        #e62600; // red
+$color-danger-lt:     #fcf4f2;
+$color-danger-dk:     #a51b00;
+
+$color-success:       #77b259; // green
+$color-success-lt:    #f3faef;
+$color-success-dk:    #325e1c;
+
+$color-caution:       #ffdb4d; // yellow
+$color-caution-lt:    #fff2cc;
+$color-caution-dk:    #806000;

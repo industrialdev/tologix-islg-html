@@ -1,0 +1,32 @@
+header{
+  background:$color-lt;
+}
+
+.header{
+	&__brand{
+		display:block;
+		position:absolute;
+		max-width:200px;
+		left:0;
+		top:50%;
+		transform:translateY(-50%);
+		img{
+			width:100%;
+		}
+	}
+	&__utility{
+		padding:10px 0;
+		background:$color-brand-1;
+	}
+  &__content{
+    padding:20px 0;
+    background:$color-brand-1-dk;
+    h1{
+    	margin:0;
+    }
+  }
+  &__content-wrapper{
+  	position:relative;
+  	padding-left:250px;
+  }
+}

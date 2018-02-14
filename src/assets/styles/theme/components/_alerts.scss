@@ -1,0 +1,43 @@
+.alert{
+  padding:15px;
+  padding-left:40px;
+  margin-bottom:15px;
+  position:relative;
+  border-left:8px solid;
+  font-weight:600;
+  &--info{
+    background:$color-lt;
+  }
+  &--success{
+    background:$color-success-lt;
+    color:$color-success-dk;
+    i{
+      color:$color-success-dk;
+    }
+  }
+  &--warning{
+    background:$color-caution-lt;
+    color:$color-caution-dk;
+    i{
+      color:$color-caution-dk;
+    }
+  }
+  &--danger{
+    background:$color-danger-lt;
+    color:$color-danger-dk;
+    i{
+      color:$color-danger-dk;
+    }
+  }
+  &__icon{
+    position:absolute;
+    left:15px;
+    top:50%;
+    transform:translateY(-50%);
+  }
+  &__close{
+    position:absolute;
+    top:15px;
+    right:15px;
+  }
+}

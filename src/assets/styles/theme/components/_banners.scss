@@ -1,0 +1,53 @@
+/* BANNER COMPONENTS
+---------------------------------------------------------------------------*/ 
+.banner{
+  padding:60px 0;
+  position:relative;
+  width:100%;
+  background:$color-bg;
+  color:$color-lt;
+  &--front{
+    padding:80px 0;
+    padding-bottom:200px;
+  	background-color:$color-banner-bg;
+    background-image:url('../images/Banners/Home.png'), url('../images/Banners/home-banner-hexagons.png');
+    background-size:auto 120%, 370px auto;
+    background-repeat:no-repeat;
+    background-position:bottom 0 right -250px, top 12% left 0;
+  	h2{
+  		@include set-type(42, 300, 42);
+      margin-bottom:40px;
+  	}
+    p{
+      margin-bottom:40px;
+      @include set-type(20, 300, 30);
+    }
+  }
+  &--sub{
+    padding:0;
+    background-color:$color-bg;
+    color:$color-neutral-dk;
+    background-position:right;
+    background-size:cover;
+    background-repeat:no-repeat;
+    *[class^="grid__col"]{
+      padding-top:60px;
+      padding-bottom:60px;
+      padding-right:120px;
+      background:$color-bg;
+    }
+    h1{
+      @include set-type(18, 600, 22);
+    }
+  }
+  &--product{
+    background-image:url('../images/Banners/Product.png');
+  }
+  + section{
+    .videobox{
+      &:first-child{
+        margin-top:-180px;
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+/* STRUCTURE HELPERS
+---------------------------------------------------------------------------*/
+.container{
+  @include clearfix();
+  width:100%;
+  max-width:$site-width;
+  padding:0 $gutter-width;
+  margin:0 auto;
+  .container{
+    padding:0;
+  }
+}
+
+.full-width{
+  width:100%;
+}
+
+.pull-right{
+  float:right;
+}
+
+.hidden{
+  display:none;
+}
+
+.spacer{
+  background:transparent;
+  margin:$gutter-width 0;
+}
+
+.divider{
+  text-align:center;
+  position:relative;
+  margin:40px 0;
+  margin-top:100px;
+  &__text{
+    display:inline-block;
+    background:$color-lt;
+    margin:0;
+    @include set-type(16, 700, 20);
+    padding:0 60px;
+    text-transform:uppercase;
+    color:$color-neutral;
+  }
+  hr{
+    position:absolute;
+    left:0;
+    top:50%;
+    transform:translateY(-50%);
+    margin:0;
+    z-index:-1;
+  }
+}

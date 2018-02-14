@@ -1,0 +1,19 @@
+footer{
+  padding:45px 0;
+  background:$color-brand-1-dk;
+  color:$color-lt;
+  a{
+  	color:$color-lt;
+  }
+  img{
+  	width:100%;
+  	max-width:230px;
+  	margin-bottom:30px;
+  }
+}
+
+.footer{
+	&__navbar{
+		margin-bottom:60px;
+	}
+}

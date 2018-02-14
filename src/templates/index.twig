@@ -1,0 +1,157 @@
+{% extends "layouts/default.twig" %}
+{% set pageTitle = "Home" %}
+
+{% block content %}
+
+	<div class="banner banner--front">
+		<div class="container">
+			<div class="grid">
+				<div class="grid__col--md-7 grid__col--offset-right-md-1">
+					<h2>Accelerated legal research<br> backed by subject matter experts</h2>
+					<p><em>Investor-State LawGuide (ISLG) significantly reduces the time it takes to conduct comprehensive research for investment treaty law. ISLG's combination of powerful software and subject matter expertise allows users to obtain fast, accurate results.</em></p>
+					<a href="#" class="btn btn--primary">Start Your Trial</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section id="intro">
+		<div class="container">
+			<div class="grid">
+				<div class="grid__col--md-10 grid__col--offset-right-md-1">
+					<button data-popup="video-popup-1" class="videobox">
+						<div class="videobox__image-container" style="background-image:url('assets/images/Home/Video-thumb.png');">
+							<!-- image generated as background style -->
+						</div>
+						<div class="videobox__content">
+							<p>Learn more about the features and benefits of ISLG.</p>
+							<span class="link">Watch the video</span>
+							<div class="btn--play__wrapper">
+								<div class="btn btn--play"><span class="webaim-hidden">Play Video</span></div>
+							</div>
+						</div>
+					</button>
+					<div class="popup" id="video-popup-1">
+					  <div class="popup__content">
+					    <button class="popup__close"><i class="fa fa-times" aria-hidden="true"></i><span class="webaim-hidden">Close popup</span></button>
+							<div class="video__wrapper">
+    						<iframe class="video" width="560" height="315" src="//www.youtube.com/embed/NKZOxm4xAsg?rel=0" frameborder="0" allowfullscreen></iframe>
+							</div>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<h2 class="section__heading">Your legal research, made easy</h2>
+			<p class="section__description">ISLG allows researchers to analyze key investment treaty materials.</p>
+			<div class="grid features">
+				<div class="grid__col--md-4 feature">
+					<img src="assets/images/Home/pinpoint-icon.png" alt="">
+					<p><strong>Pinpoint relevant information</strong> quickly with a suite of advanced research tools</p>
+				</div>
+				<div class="grid__col--md-4 feature">
+					<img src="assets/images/Home/map-relationships-icon.png" alt="">
+					<p><strong>Map relationships</strong> between relevant materials and past decisions by tribunals</p>
+				</div>
+				<div class="grid__col--md-4 feature">
+					<img src="assets/images/Home/content-analysis-icon.png" alt="">
+					<p><strong>Review extensive content analysis</strong> conducted by subject matter experts</p>
+				</div>
+			</div>
+			<div class="grid">
+				<div class="grid__col--md-6 grid__col--offset-right-md-3 text-centered">
+					Our intuitive research product contains all materials relevant to publicly available investment treaty cases. <a href="#" class="btn--directional btn--directional-forward"><span class="btn--directional__text">Learn more</span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+				</div>
+			</div>
+			<div class="divider">
+				<h2 class="divider__text">Organizations that use ISLG</h2>
+				<hr>
+			</div>
+			<div class="clients" data-slick='{"slidesToShow": 4, "slidesToScroll": 1}'>
+				<div><img src="assets/images/Home/clients/chaffetz.png" alt=""></div>
+				<div><img src="assets/images/Home/clients/Curtis.png" alt=""></div>
+				<div><img src="assets/images/Home/clients/essex.png" alt=""></div>
+				<div><img src="assets/images/Home/clients/Fietta.png" alt=""></div>
+				<div><img src="assets/images/Home/clients/FIU.png" alt=""></div>
+				<div><img src="assets/images/Home/clients/fordham.png" alt=""></div>
+				<div><img src="assets/images/Home/clients/HOGAN-LOVELLS.png" alt=""></div>
+			</div>
+		</div>
+	</section>
+
+	<section id="testimonials" class="section--grey">
+		<div class="container">
+			<h2 class="section__heading">Why our clients continue to trust ISLG</h2>
+			<div class="slider__wrapper">
+				<div class="slider">
+			    <ul class="testimonials slider__slides">
+		        <li class="testimonial slider__slide card">
+		          <div class="testimonial__quote"><p>&ldquo;The best online resource for investment treaty law.&rdquo;</p></div>
+		          <div class="testimonial__meta">
+		          	<div class="slider__headshot-wrapper">
+		              <img src="assets/images/Home/default-testimonial-img.png" alt="">
+		            </div>
+		            <p>
+		              <strong>Judith Gill QC</strong><br>
+		              <em>Allen &amp; Overy LLP</em>
+		            </p>
+		          </div>
+		        </li>
+		        <li class="testimonial slider__slide card">
+		          <div class="testimonial__quote"><p>&ldquo;ISLG is your one-stop resource. No other database provides the researcher with so many effective and efficient ways to research and access treaties, rules of arbitration, decisions and awards, and other related documents.&rdquo;</p></div>
+		          <div class="testimonial__meta">
+		          	<div class="slider__headshot-wrapper">
+		              <img src="assets/images/Home/marci-hoffman.png" alt="">
+		            </div>
+		            <p>
+		              <strong>Marci Hoffman</strong><br>
+		              <em>Berkeley Law</em>
+		            </p>
+		          </div>
+		        </li>
+		        <li class="testimonial slider__slide card">
+		          <div class="testimonial__quote"><p>&ldquo;ISLG is a very powerful and useful tool. I would recommend it to any lawyer practicing in international arbitration. It is not a plus. It is a must!.&rdquo;</p></div>
+		          <div class="testimonial__meta">
+		          	<div class="slider__headshot-wrapper">
+		              <img src="assets/images/Home/Alvaro-Galindo.png" alt="">
+		            </div>
+		            <p>
+		              <strong>Alvaro Galindo</strong><br>
+		              <em>Dechert LLP</em>
+		            </p>
+		          </div>
+		        </li>
+			    </ul>
+			    <div class="slider__btn-wrapper slider__btn-wrapper--prev">
+				    <button class="slider__btn slider__btn--prev">
+				    	<div class="slider__arrow">
+				    		<i class="zmdi zmdi-arrow-left" aria-hidden="true"></i>
+				    	</div>
+				    	<span class="webaim-hidden">Previous</span>
+				    </button>
+			  	</div>
+			  	<div class="slider__btn-wrapper slider__btn-wrapper--next">
+				    <button class="slider__btn slider__btn--next">
+				    	<div class="slider__arrow">
+				    		<i class="zmdi zmdi-arrow-right" aria-hidden="true"></i>
+				    	</div>
+				    	<span class="webaim-hidden">Next</span>
+				    </button>
+			  	</div>
+	  		</div>
+	  		<ul class="slider__tabs">
+		  		<li class="slider__tab"><button class="btn btn--slider-tab"><span class="webaim-hidden">Slide 1</span></button></li>
+		  		<li class="slider__tab"><button class="btn btn--slider-tab active"><span class="webaim-hidden">Slide 2</span></button></li>
+		  		<li class="slider__tab"><button class="btn btn--slider-tab"><span class="webaim-hidden">Slide 3</span></button></li>
+		  	</ul>
+  		</div>
+		</div>
+	</section>
+
+	<section id="prefooter" class="section--blue">
+		<div class="container">
+			<h2 class="section__heading">A powerful combination of people and technology</h2>
+			<p class="text-centered"><a href="#" class="btn btn--tertiary-reversed">Start Your Trial</a> <button class="btn btn--quaternary" data-popup="video-popup-1"><i class="fa fa-play" aria-hidden="true"></i> Watch the video</button></p>
+		</div>
+	</section>
+
+{% endblock %}

@@ -1,0 +1,29 @@
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="header">
+	<div class="header__utility">
+		<div class="container">
+			<nav class="nav nav--utility">
+				<ul class="nav__menu">
+					<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> <span class="webaim-hidden">Visit us on Twitter</span></a></li>
+					<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i> <span class="webaim-hidden">Visit us on Linkedin</span></a></li>
+					<li><a href="#" class="btn btn--sm btn--secondary">Login</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+  <div class="header__content">
+    <div class="container">
+    	<div class="header__content-wrapper">
+    		{% if template == "front" %}
+    		<h1>
+    		{% endif %}
+    		<a href="/" class="header__brand"><img src="assets/images/ISLG-logo.svg" alt="Investor-State Law Guide"></a>
+				{% if template == "front" %}
+    		</h1>
+    		{% endif %}
+    		{% include "../components/navigation.twig" with {'modifier' : 'horizontal'} %}
+    	</div>
+    </div>
+  </div>
+</header><!-- /header -->
