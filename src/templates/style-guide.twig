@@ -1,0 +1,202 @@
+{% extends "layouts/subpage.twig" %}
+{% set pageTitle = "Styleguide" %}
+
+{% block content %}
+
+	<div class="banner banner--sub" style="background-image:url('assets/images/Banners/About.png');">
+		<div class="container">
+			<div class="grid">
+				<div class="grid__col--md-6 grid__col--offset-right-md-1 banner--bg-fix">
+					<h1 class="silhouette__wrapper"><span class="silhouette" aria-hidden="true">Style Guide</span>Style Guide</h1>
+					<div class="silhouette__wrapper">
+						<hr class="silhouette">
+						<hr>
+					</div>
+					<h2>On this page you will find an inventory of UI elements to be used on pages.</h2>
+					<img src="assets/images/Banners/banner-poly.svg" alt="" class="banner__poly">
+				</div>
+			</div>
+		</div>
+		<img class="banner--sub__hexagons" src="assets/images/Banners/home-banner-hexagons.png" alt="">
+	</div>
+
+	<section id="page-content">
+		<div class="container">
+			<div class="grid">
+				<div class="grid__col--md-10 grid__col--offset-right-md-1">
+					<p>This is content that is aligned with the left edge of the page title found in the banner above.</p>
+				</div>
+			</div>
+			<p>This is content that is aligned with the left edge of the page container.</p>
+			<h1>Heading Level 1 (reserved for title found in the banner)</h1>
+			<h2 class="blue">Heading Level 2 (with blue modifier)</h2>
+			<h3>Heading Level 3</h3>
+			<h4>Heading Level 4</h4>
+			<h5>Heading Level 5</h5>
+			<hr class="section__heading-divider">
+			<p><strong>Paragraph text</strong>: Lorem<sup>sup</sup> ipsum<sub>sub</sub> <em>dolor sit amet</em>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p><strong>Paragraph text</strong>: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<hr>
+			{% include "components/examples/grid.twig" %}
+			<hr>
+			<p><button class="btn btn--primary">Primary Button</button></p>
+			<p><button class="btn btn--secondary">Secondary Button</button></p>
+			<p style="background:#000;padding:5px;padding-top:10px;"><button class="btn btn--tertiary">Tertiary Button (Use on dark backgrounds)</button></p>
+			<p style="background:#000;padding:5px;padding-top:10px;"><button class="btn btn--tertiary-reversed">Tertiary reversed Button</button></p>
+			<p><button class="btn btn--quaternary">Quaternary Button</button></p>
+			<p><button class="btn btn--directional btn--directional-back"><i class="fa fa-long-arrow-left" aria-hidden="true"></i>Directional Back Button</button> <button class="btn btn--directional btn--directional-forward"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Directional Forward Button</button></p>
+			<p><button class="link">Link element</button></p>
+			<hr>
+			<ul>
+				<li>Unordered List Item</li>
+				<li>
+					Unordered List Item
+					<ul>
+						<li>Nested Unordered List Item</li>
+						<li>Nested Unordered List Item</li>
+						<li>Nested Unordered List Item</li>
+					</ul>
+				</li>
+				<li>Unordered List Item</li>
+				<li>Unordered List Item</li>
+				<li>Unordered List Item</li>
+			</ul>
+			<ol>
+				<li>Ordered List Item</li>
+				<li>
+					Ordered List Item
+					<ol>
+						<li>Nested Ordered List Item</li>
+						<li>Nested Ordered List Item</li>
+						<li>Nested Ordered List Item</li>
+					</ol>
+				</li>
+				<li>Ordered List Item</li>
+				<li>Ordered List Item</li>
+				<li>Ordered List Item</li>
+			</ol>
+			<hr>
+			<table>
+				<thead>
+					<tr>
+						<th>Table Heading</th>
+						<th>Table Heading</th>
+						<th>Table Heading</th>
+						<th>Table Heading</th>
+						<th>Table Heading</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Table Cell</td>
+						<td>Table Cell</td>
+						<td>Table Cell</td>
+						<td>Table Cell</td>
+						<td>Table Cell</td>
+					</tr>
+					<tr>
+						<td>Table Cell</td>
+						<td>Table Cell</td>
+						<td>Table Cell</td>
+						<td>Table Cell</td>
+						<td>Table Cell</td>
+					</tr>
+					<tr>
+						<td>Table Cell</td>
+						<td>Table Cell</td>
+						<td>Table Cell</td>
+						<td>Table Cell</td>
+						<td>Table Cell</td>
+					</tr>
+					<tr>
+						<td>Table Cell</td>
+						<td>Table Cell</td>
+						<td>Table Cell</td>
+						<td>Table Cell</td>
+						<td>Table Cell</td>
+					</tr>
+					<tr>
+						<td>Table Cell</td>
+						<td>Table Cell</td>
+						<td>Table Cell</td>
+						<td>Table Cell</td>
+						<td>Table Cell</td>
+					</tr>
+				</tbody>
+			</table>
+			<hr>
+			<blockquote>
+				<i class="zmdi zmdi-quote" aria-hidden="true"></i>
+				<p><strong>This is a blockquote</strong>: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+			</blockquote>
+			<hr>
+			<div class="grid">
+				<div class="grid__col--md-6 grid__col--offset-right-md-3">
+					<form action="/style-guide.html">
+						<div class="form__group">
+							<div class="form__input--wrapper">
+								<label class="form__label" for="example-text">Text Field<span class="req">*</span></label>
+								<input class="form__input" type="text" id="example-text" placeholder="Text Field" required>
+							</div>
+						</div>
+						<div class="form__group">
+							<div class="form__input--wrapper">
+								<label class="form__label" for="example-email">Email Field<span class="req">*</span></label>
+								<input class="form__input" type="email" id="example-email" placeholder="Email Field" required>
+							</div>
+						</div>
+						<div class="form__group">
+							<div class="form__input--wrapper">
+								<label class="form__label" for="example-select">Select Field</label>
+								<select class="form__input" id="example-select">
+									<option value="">Select an option</option>
+								</select>
+							</div>
+						</div>
+						<fieldset class="form__group">
+              <legend class="form__label">Radio group</legend>
+              <label for="radio-1" class="form__radio"><input type="radio" id="radio-1" name="radios"> Radio button 1</label>
+              <label for="radio-2" class="form__radio"><input type="radio" id="radio-2" name="radios"> Radio button 2</label>
+              <label for="radio-3" class="form__radio"><input type="radio" id="radio-3" name="radios"> Radio button 3</label>
+            </fieldset>
+            <fieldset class="form__group">
+              <legend class="form__label">Checkboxes</legend>
+              <label for="checkbox-1" class="form__checkbox"><input type="checkbox" id="checkbox-1" name="checkboxes"> Checkbox 1</label>
+              <label for="checkbox-2" class="form__checkbox"><input type="checkbox" id="checkbox-2" name="checkboxes"> Checkbox 2</label>
+              <label for="checkbox-3" class="form__checkbox"><input type="checkbox" id="checkbox-3" name="checkboxes"> Checkbox 3</label>
+            </fieldset>
+						<div class="form__group">
+							<div class="form__input--wrapper">
+								<label class="form__label" for="example-textarea">Textarea Field<span class="req">*</span></label>
+								<textarea class="form__input" id="example-textarea" required></textarea>
+							</div>
+						</div>
+						<button type="submit" class="btn btn--primary">Submit</button>
+					</form>
+				</div>
+			</div>
+			<hr>
+			<button class="btn btn--primary" data-popup="popup-1">Popup</button>
+			<div class="popup" id="popup-1">
+			  <div class="popup__content">
+			    <button class="popup__close"><i class="fa fa-times" aria-hidden="true"></i><span class="webaim-hidden">Close popup</span></button>
+			    <h2>This is a popup</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+			  </div>
+			</div>
+			<hr>
+			<p>Tooltip Top <button class="btn btn--link tooltip-toggle"><span class="tooltip tooltip--top">this is an example tooltip</span><i class="fa fa-question-circle" aria-hidden="true"></i></button></p>
+      <p>Tooltip Right <button class="btn btn--link tooltip-toggle"><span class="tooltip tooltip--right">this is an example tooltip</span><i class="fa fa-question-circle" aria-hidden="true"></i></button></p>
+      <p>Tooltip Bottom <button class="btn btn--link tooltip-toggle"><span class="tooltip tooltip--bottom">this is an example tooltip</span><i class="fa fa-question-circle" aria-hidden="true"></i></button></p>
+      <p>Tooltip Left <button class="btn btn--link tooltip-toggle"><span class="tooltip tooltip--left">this is an example tooltip</span><i class="fa fa-question-circle" aria-hidden="true"></i></button></p>
+		</div>
+	</section>
+
+	<section id="prefooter" class="section--blue">
+		<div class="container">
+			<h2 class="section__heading section__heading--white light">Prefooter content</h2>
+			<p class="text-centered"><a href="#" class="btn btn--tertiary-reversed">Button Link</a></p>
+		</div>
+	</section>
+
+{% endblock %}

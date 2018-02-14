@@ -59,3 +59,23 @@
     z-index:1;
   }
 }
+
+.offset{
+  &--top{
+    display:block;
+    margin-top:-45px;
+  }
+}
+
+.mobile{
+  display:none;
+}
+
+@media (max-width:767px){
+  .mobile{
+    display:block;
+  }
+  .desktop{
+    display:none;
+  }
+}

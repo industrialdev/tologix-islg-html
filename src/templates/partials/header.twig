@@ -1,6 +1,6 @@
 <a class="skip-link" href="#main-content">Skip to main content</a>
 
-<header class="header">
+<header class="header desktop">
 	<div class="header__utility">
 		<div class="container">
 			<nav class="nav nav--utility">
@@ -27,3 +27,19 @@
     </div>
   </div>
 </header><!-- /header -->
+
+<header class="header mobile">
+  <div class="header__bar drawer-controls">
+    {% if template == "front" %}
+      <h1>
+    {% endif %}
+      <a href="/" class="header__brand"><img src="assets/images/ISLG-logo.svg" alt="Investor-State Law Guide"></a>
+    {% if template == "front" %}
+      </h1>
+    {% endif %}
+    <button class="btn btn--mobile drawer-toggle"><i class="fa fa-bars drawer-control--open" aria-hidden="true"></i><i class="fa fa-times drawer-control--close" aria-hidden="true"></i><span class="webaim-hidden drawer-control--open">Open Menu</span><span class="webaim-hidden drawer-control--close">Close Menu</span></button>
+  </div>
+  <div class="mobile-menu drawer">
+    {% include "../components/navigation.twig" with {'modifier' : 'mobile'} %}
+  </div>
+</header>

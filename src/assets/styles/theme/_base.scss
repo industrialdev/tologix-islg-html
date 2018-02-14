@@ -29,7 +29,7 @@ h4,
 h5,
 h6{
   font-family:$font-display-family;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   margin-top:15px;
   &:first-child{
     margin-top:0;
@@ -48,15 +48,15 @@ h6{
 }
 
 h1{
-  @include set-type(36, 700, 40);
+  @include set-type(36, 600, 40);
 }
 
 h2{
-  @include set-type(32, 600, 36);
+  @include set-type(32, 500, 36);
 }
 
 h3{
-  @include set-type(28, 600, 32);
+  @include set-type(28, 400, 32);
 }
 
 h4{
@@ -134,7 +134,7 @@ ol{
 ul,
 ol{
   padding-left:20px;
-  margin-bottom:25px;
+  margin-bottom:30px;
   li{
     margin-bottom:10px;
     > ul,
@@ -148,7 +148,7 @@ ol{
 }
 
 hr{
-  margin:15px 0;
+  margin:40px 0;
   border:none;
   height:1px;
   width:100%;
@@ -188,6 +188,22 @@ details{
   display:block;
   summary{
     padding:10px;
+  }
+}
+
+blockquote{
+  position:relative;
+  padding-left:60px;
+  border-left:5px solid $color-brand-1;
+  margin-bottom:30px;
+  font-style:italic;
+  i.zmdi{
+    position:absolute;
+    left:15px;
+    top:50%;
+    transform:translateY(-50%);
+    color:$color-brand-1;
+    font-size:36px;
   }
 }
 

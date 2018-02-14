@@ -39,7 +39,8 @@
           border-bottom:3px solid transparent;
           border-top:3px solid transparent;
           &:hover,
-          &:focus{
+          &:focus,
+          &.active{
             border-bottom:3px solid $color-brand-1-lt;
           }
           &.btn{
@@ -194,6 +195,29 @@
             &:focus{
               border-bottom:1px solid $color-brand-1-lt;
             }
+          }
+        }
+      }
+    }
+  }
+  &--mobile{
+    border-bottom:3px solid $color-lt;
+    .nav__menu{
+      li{
+        a{
+          display:block;
+          padding:15px;
+          color:$color-lt;
+          text-decoration:none;
+          @include set-type(16, 500, 20);
+          &.btn{
+            border-radius:0;
+            border:none;
+            margin:0;
+          }
+          &:hover,
+          &:focus{
+            background:$color-brand-1-lt;
           }
         }
       }

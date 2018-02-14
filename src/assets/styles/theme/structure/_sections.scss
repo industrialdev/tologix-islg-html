@@ -21,6 +21,15 @@ section{
 		&--spaced{
 			margin-bottom:30px;
 		}
+		&--left{
+			text-align:left;
+		}
+	}
+	&__heading-divider{
+		width:30px;
+		height:3px;
+		background:$color-brand-1-lt;
+		margin:35px 0;
 	}
 	&__description{
 		text-align:center;
@@ -46,9 +55,23 @@ section{
 	}
 	&--hex-center{
 		background-image:url('../images/product/Polygon.png');
-		background-size:50%;
+		background-size:700px auto;
 		background-repeat:no-repeat;
-		background-position:bottom -250px center;
+		background-position:bottom -350px center;
+	}
+	&--hex-vert{
+		background-image:url('../images/Banners/Polygon.png'), url('../images/Banners/Polygon.png');
+		background-repeat:no-repeat;
+		background-position:bottom -150px right -100px, top 40% left 100px;
+	}
+	&--hex-right{
+		background-image:url('../images/product/Polygon.png');
+		background-size:700px auto;
+		background-repeat:no-repeat;
+		background-position:bottom -150px right -300px;
+	}
+	&--padded-right{
+		padding-right:10%;
 	}
 }
 

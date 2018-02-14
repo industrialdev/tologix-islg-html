@@ -4,7 +4,7 @@
 .table{
   &__wrapper{
     overflow-x:auto;
-    margin-bottom:15px;
+    margin-bottom:30px;
     max-width:100%;
     &:last-child{
       margin-bottom:0;
@@ -21,11 +21,15 @@ table{
         padding:10px;
         white-space:nowrap;
         color:$color-lt;
+        background:$color-brand-1-dk;
       }
     }
   }
   tbody{
     tr{
+      &:nth-of-type(2n){
+        background:$color-neutral-lt;
+      }
       td{
         padding:10px;
       }

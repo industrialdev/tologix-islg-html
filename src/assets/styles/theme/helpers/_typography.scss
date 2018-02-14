@@ -20,6 +20,14 @@
   white-space:nowrap;
 }
 
+.light{
+  font-weight:300;
+}
+
+.blue{
+  color:$color-brand-1;
+}
+
 .ellipsis{
   display:block;
   white-space:nowrap;
@@ -78,6 +86,10 @@
       color:$color-brand-1;
       position:relative;
     }
+  }
+  &--dk{
+    color:$color-neutral-dk;
+    font-weight:400;
   }
 }
 

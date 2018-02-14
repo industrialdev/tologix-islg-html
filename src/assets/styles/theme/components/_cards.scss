@@ -1,28 +1,7 @@
 /* CARD COMPONENTS
 ---------------------------------------------------------------------------*/
 .card{
-  overflow:hidden;
-  background:$color-lt;
-  &.drawer{
-    background:$color-lt;
-    border-top:none;
-  }
-  &__header{
-    padding:$gutter-width;
-    color:$color-lt;
-  }
-  &__title{
-    text-transform:uppercase;
-    @include set-type(18, 700, 24);
-  }
-  &__footer{
-    padding:$gutter-width;
-    font-weight:700;
-  }
-  &--padded{
-    padding:$gutter-width;
-  }
-  &--flush{
-    margin:0 -$gutter-width;
-  }
+  margin:0 -25px;
+  padding:25px;
+  background:rgba($color-brand-1-lt, 0.1);
 }

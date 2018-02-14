@@ -2,6 +2,9 @@
 ---------------------------------------------------------------------------*/
 .dropdown{
   position:relative;
+  .card{
+    margin:0;
+  }
   .drawer{
     position:relative;
     z-index:2;
@@ -42,20 +45,8 @@
 }
 
 .drawer-controls{
-  position:relative;
   .drawer-toggle{
     cursor:pointer;
-    position:absolute;
-    right:0;
-    top:50%;
-    transform:translateY(-50%);
-    border:none;
-    background:transparent;
-    height:100%;
-    font-size:14px;
-    i{
-      right:15px;
-    }
     .drawer-control--close{
       display:none;
     }

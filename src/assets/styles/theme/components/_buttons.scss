@@ -29,6 +29,16 @@ button{
       color:$color-lt;
     }
   }
+  &--primary-reversed{
+    background:$color-lt;
+    border:1px solid $color-brand-1;
+    color:$color-brand-1;
+    &:hover,
+    &:focus{
+      background:$color-brand-1;
+      color:$color-lt;
+    }
+  }
   &--secondary{
     background:$color-brand-1-dk;
     border:1px solid $color-brand-1-dk;
@@ -138,9 +148,11 @@ button{
     width:100%;
     text-align:left;
     padding:10px 15px;
-    background:$color-lt;
     position:relative;
     margin-bottom:0;
+    background:$color-brand-1;
+    color:$color-lt;
+    border-radius:0;
   }
   &--play,
   &--play-dk,

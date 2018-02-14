@@ -1,6 +1,17 @@
 /* FORM COMPONENTS
 ---------------------------------------------------------------------------*/
 .form{
+  *[type="submit"]{
+    min-width:150px;
+    text-align:center;
+  }
+  &__heading{
+    @include set-type(26, 500, 32);
+    margin-bottom:10px;
+  }
+  &__descr{
+    margin-bottom:45px;
+  }
   &__group{
     margin-bottom:25px;
   }
@@ -16,11 +27,29 @@
     max-width:100%;
     text-align:left;
     @include set-type(16, 400, 20);
+    border:1px solid $color-neutral-lt;
+    border-radius:5px;
+    color:$color-neutral-dk;
+    &--wrapper{
+      border:1px solid $color-neutral-lt;
+      border-radius:5px;
+      .form{
+        &__label{
+          padding:10px;
+          padding-bottom:0;
+          margin-bottom:0;
+        }
+        &__input{
+          border:none;
+        }
+      }
+    }
   }
   &__label{
     display:block;
     margin-bottom:5px;
-    font-weight:600;
+    color:$color-brand-1;
+    @include set-type(14, 400, 18);
   }
   &__select-wrapper{
     position:relative;
@@ -47,8 +76,6 @@
       position:absolute;
       left:0;
       top:5px;
-      height:1px;
-      width:1px;
       &:checked{
         + .form__radio-replacement-wrapper,
         + .form__checkbox-replacement-wrapper{
@@ -123,8 +150,9 @@
   }
 }
 
-textarea{
-  min-height:84px;
+textarea.form__input{
+  min-height:175px;
+  margin-bottom:-5px;
 }
 
 .select{
