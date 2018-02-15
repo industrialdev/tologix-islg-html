@@ -181,7 +181,6 @@
       }
     }
     &__btn{
-      width:25px;
       &--prev{
         i{
           left:0;
@@ -191,6 +190,14 @@
         i{
           right:0;
         }
+      }
+    }
+    &__btn-wrapper{
+      &--prev{
+        left:0;
+      }
+      &--next{
+        right:0;
       }
     }
   }

@@ -78,4 +78,18 @@
   .desktop{
     display:none;
   }
+  .divider{
+    &__text{
+      position:static;
+      top:auto;
+      left:auto;
+      transform:none;
+      background:transparent;
+      width:100%;
+      padding:0;
+    }
+    hr{
+      display:none;
+    }
+  }
 }

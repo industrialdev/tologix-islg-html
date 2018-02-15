@@ -287,6 +287,7 @@ body{
 }
 
 .event{
+	display:block;
 	text-decoration:none;
 	color:$color-neutral-dk;
 	&__image-wrapper{
@@ -326,7 +327,61 @@ body{
 
 @media (max-width:767px){
 	body{
-		padding-top:80px;
+		padding-top:60px;
+	}
+	.videobox{
+		width:100%;
+		padding-left:0;
+		padding-top:0;
+		&__image-container{
+			position:static;
+			height:350px;
+			width:100%;
+		}
+		&__content{
+			position:relative;
+			padding:60px 90px;
+			padding-top:100px;
+			background:$color-brand-1;
+			p{
+				@include set-type(16, 500, 22);
+			}
+		}
+		.btn--play__wrapper{
+			left:50%;
+			top:0;
+			transform:translate(-50%, -50%);
+		}
+		&:hover,
+		&:focus{
+			.btn--play{
+				background:$color-brand-1-dk;
+			}
+		}
+	}
+	.bucket{
+		padding:30px 0;
+		*[class^="grid__col"]{
+			position:relative;
+			img{
+				position:static;
+				top:auto;
+				transform:none;
+			}
+		}
+		&__img{
+			&--offset-left{
+				margin-left:0;
+			}
+		}
+	}
+	.product-features{
+		&__tabs{
+			flex-wrap:wrap;
+		}
+		&__tab{
+			width:100%;
+		}
 	}
 }
 

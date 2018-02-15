@@ -92,3 +92,11 @@ section{
 		margin:15px 30px;
 	}
 }
+
+@media (max-width:767px){
+	.section{
+		&--padded-right{
+			padding-right:15px;
+		}
+	}
+}

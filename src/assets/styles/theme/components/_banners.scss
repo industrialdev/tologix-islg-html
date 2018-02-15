@@ -90,6 +90,7 @@
       left:-100px;
       width:400px;
       height:auto;
+      pointer-events:none;
     }
   }
   &--bg-fix{
@@ -115,6 +116,48 @@
     .videobox{
       &:first-child{
         margin-top:-180px;
+      }
+    }
+  }
+}
+
+@media (max-width:991px){
+  .banner{
+    &--front{
+      background-image:url('../images/Banners/home-banner-hexagons.png');
+      background-size:370px auto;
+      background-repeat:no-repeat;
+      background-position:top 5% left 0;
+    }
+  }
+}
+
+@media (max-width:767px){
+  .banner{
+    &--front{
+      padding:30px 0;
+      h2{
+        @include set-type(28, 300 34);
+        margin-bottom:30px;
+      }
+      p{
+        @include set-type(16, 300, 20);
+        margin-bottom:30px;
+      }
+    }
+    &--sub{
+      *[class^="grid__col"]{
+        padding:30px 15px;
+      }
+      .btn--play-wrapper{
+        display:none;
+      }
+    }
+    + section{
+      .videobox{
+        &:first-child{
+          margin-top:0;
+        }
       }
     }
   }

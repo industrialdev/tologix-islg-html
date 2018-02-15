@@ -20,3 +20,16 @@ footer{
 		margin-bottom:60px;
 	}
 }
+
+@media (max-width:767px){
+  .footer{
+    &__navbar{
+      display:none;
+    }
+  }
+  footer{
+    .text-right{
+      text-align:left;
+    }
+  }
+}

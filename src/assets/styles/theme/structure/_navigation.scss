@@ -24,6 +24,7 @@
         font-weight:600;
         text-align:center;
         position:relative;
+        margin:5px 0;
         margin-right:45px;
         &:last-of-type{
           margin-right:0;
@@ -201,7 +202,7 @@
     }
   }
   &--mobile{
-    border-bottom:3px solid $color-lt;
+    border-bottom:1px solid $color-brand-1-dk;
     .nav__menu{
       li{
         a{
@@ -219,6 +220,19 @@
           &:focus{
             background:$color-brand-1-lt;
           }
+        }
+      }
+    }
+  }
+  &--mobile-utility{
+    border-bottom:3px solid $color-lt;
+    padding:15px;
+    .nav__menu{
+      li{
+        display:inline-block;
+        margin-right:30px;
+        a{
+          color:$color-lt;
         }
       }
     }
@@ -263,4 +277,8 @@
       }
     }
   }
+}
+
+@media (max-width:767px){
+
 }

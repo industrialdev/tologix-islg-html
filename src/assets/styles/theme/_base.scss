@@ -148,10 +148,12 @@ ol{
 }
 
 hr{
+  text-align:left;
   margin:40px 0;
   border:none;
   height:1px;
   width:100%;
+  display:block;
   background:$color-neutral-lt;
 }
 
