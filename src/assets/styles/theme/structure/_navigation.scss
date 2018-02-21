@@ -116,12 +116,29 @@
           &:focus{
             border-bottom:1px solid $color-lt;
           }
-          &.btn{
+          &.btn--secondary{
             margin-bottom:0;
             border-bottom:1px solid $color-brand-1-dk;
             &:hover,
             &:focus{
               border-bottom:1px solid $color-brand-1-lt;
+            }
+          }
+          &.btn--quaternary{
+            margin-bottom:0;
+            text-transform:uppercase;
+            font-weight:700;
+            border-bottom:1px solid $color-brand-1-lt;
+            &:hover,
+            &:focus{
+              border-bottom:1px solid $color-brand-1-dk;
+            }
+          }
+          &.link{
+            border-bottom:1px solid $color-lt;
+            &:hover,
+            &:focus{
+              border-bottom:1px solid transparent;
             }
           }
         }
