@@ -1,5 +1,6 @@
 .tooltip-toggle{
   position:relative;
+  overflow:visible;
   &:hover,
   &:focus{
     .tooltip{
