@@ -1,17 +1,28 @@
 .slider{
-  padding:0 70px;
-  margin:70px 0;
+  margin:70px -100px;
   margin-bottom:100px;
   position:relative;
+  .slick-list{
+    padding:15px 15px!important;
+  }
+  .slick-track{
+    display:flex;
+  }
+  .slick-prev{
+    display:none!important;
+  }
+  .slick-next{
+    display:none!important;
+  }
   &__btn-wrapper{
     position:absolute;
     z-index:10;
     top:50%;
     &--prev{
-      left:27%;
+      left:33%;
     }
     &--next{
-      right:27%;
+      right:33%;
     }
   }
   &__btn{
@@ -43,6 +54,7 @@
     &:hover,
     &:focus{
       background:$color-brand-1-lt;
+      outline:0;
     }
     i{
       @include set-type(12, 400, 12);
@@ -58,34 +70,10 @@
     text-align:center;
     border-radius:5px;
     margin:0;
-    width:48%;
     z-index:9;
-    position:absolute;
-    top:0;
-    left:0;
     backface-visibility: hidden;
-    transform:scale(0.55) translateX(-50%);
     transition:all 0.4s;
-    &:nth-of-type(1){
-      left:0;
-    }
-    &:nth-of-type(2){
-      left:50%;
-    }
-    &:nth-of-type(3){
-      left:82%;
-    }
-    &.active{
-      left:50%;
-      z-index:10;
-      transform:scale(1) translateX(-50%);
-    }
-    &.slider__slide--left{
-      left:-4%;
-    }
-    &.slider__slide--right{
-      left:82%;
-    }
+    transition:opacity 0.2s ease-in-out;
   }
   &__arrow{
     line-height:0;
@@ -117,6 +105,35 @@
 }
 
 .testimonial{
+  display:flex;
+  align-items:center;
+  transform:scale(0.8);
+  transform-origin:center center;
+  display:flex!important;
+  align-items:center;
+  transition: all 0.2s ease-in-out;
+  padding:0 20px;
+  &__content{
+    padding:30px;
+    border-radius:5px;
+    background:$color-lt;
+    box-shadow:0 0 7px $color-neutral-lt;
+    display:flex;
+    align-items:center;
+  }
+  &.slick-center{
+    transform:scale(1);
+  }
+  &.slick-slide{
+    height:auto;
+    img{
+      position:static;
+      transform:translate(0, 0);
+    }
+  }
+  &__content{
+
+  }
   &__quote{
     padding-top:30px;
     margin-bottom:30px;
@@ -160,11 +177,49 @@
   }
 }
 
+.slick-dots{
+  list-style:none;
+  padding:0;
+  text-align:center;
+  li{
+    display:inline-block;
+    button{
+      padding: 5px;
+      border: 1px solid #1c449c;
+      height:12px;
+      width:12px;
+      border-radius:100%;
+      background:$color-lt;
+      font-size:0;
+      margin:0 10px;
+      transition:background 0.2s ease-in-out;
+    }
+    &.slick-active{
+      button{
+        background:$color-brand-1;
+      }
+    }
+  }
+}
+
+@media(max-width:1259px){
+  .slider{
+    margin:70px 0;
+  }
+}
+
 @media(max-width:767px){
   .slider{
     padding:0 30px;
+    .slick-list{
+      padding:15px 0!important;
+      overflow:visible!important;
+    }
     &[style]{
       height:auto!important;
+    }
+    &__slides{
+      overflow:visible;
     }
     &__slide{
       display:none;
@@ -173,7 +228,6 @@
       &.active{
         display:block;
         width:100%;
-        transform:scale(1);
         margin:0;
         &[style]{
           height:auto!important;
@@ -199,6 +253,11 @@
       &--next{
         right:0;
       }
+    }
+  }
+  .testimonial{
+    &__content{
+      width:100%;
     }
   }
 }
